@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Instagram</title>
+		<title>MEETstagram</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
@@ -53,13 +53,14 @@
                         <h3>Caption... blah blah blah</h3>
                       </a>
                 </div>  
-                <section class="thumbnails">
+
                 {%for post in posts%}
                 <div>
-                <img src="{{post}}">
+                <br>
+                <img src="{{post}}" width="100" height="100">
                 <h3> "{{posts[post]}}" </h3>
+                <br>
               	</div>
-              </section>
               	{%endfor%}
 							</section>
 
